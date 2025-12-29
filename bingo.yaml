@@ -1,0 +1,162 @@
+# Bingo cards configuration for 2026
+# Mark items as complete with: true, incomplete with: false
+
+people:
+  Dad:
+    items:
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "FREE SPACE"
+        marked: true
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+
+  Mom:
+    items:
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "FREE SPACE"
+        marked: true
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+
+  Ber:
+    items:
+      - text: "blank"
+        marked: true
+      - text: "blank"
+        marked: true
+      - text: "blank"
+        marked: true
+      - text: "blank"
+        marked: true
+      - text: "blank"
+        marked: true
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "FREE SPACE"
+        marked: true
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
+      - text: "blank"
+        marked: false
