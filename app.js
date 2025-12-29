@@ -40,9 +40,14 @@ function parseSimpleYAML(yamlText) {
 
     // Item entry - must be at 6-space indent
     if (originalLine.startsWith("      - text:")) {
-      const textMatch = line.match(/- text:\s*"(.+)"/);
-      if (textMatch) {
-        currentItem = { text: textMatch[1], marked: false };
+      // Extract the text value by finding the first and last quotes
+      const firstQuote = line.indexOf('"');
+      const lastQuote = line.lastIndexOf('"');
+      if (firstQuote !== -1 && lastQuote !== -1 && firstQuote !== lastQuote) {
+        let text = line.substring(firstQuote + 1, lastQuote);
+        // Convert \" to " (escaped quotes to actual quotes)
+        text = text.replace(/\\"/g, '"').replace(/\\\"/g, '"');
+        currentItem = { text: text, marked: false };
         result.people[currentPerson].items.push(currentItem);
       }
       continue;
@@ -51,7 +56,14 @@ function parseSimpleYAML(yamlText) {
     // Marked status - must be at 8-space indent
     if (originalLine.startsWith("        marked:")) {
       if (currentItem) {
-        currentItem.marked = line.includes("true");
+        const markedValue = line.split(":")[1].trim();
+        if (markedValue === "true") {
+          currentItem.marked = true;
+        } else if (markedValue === "false") {
+          currentItem.marked = false;
+        } else {
+          currentItem.marked = null;
+        }
       }
       currentItem = null; // Reset after processing marked
     }
@@ -72,7 +84,13 @@ function toYAML(data) {
 
     for (const item of personData.items) {
       yaml += `      - text: "${item.text}"\n`;
-      yaml += `        marked: ${item.marked}\n`;
+      const markedValue =
+        item.marked === true
+          ? "true"
+          : item.marked === false
+            ? "false"
+            : "null";
+      yaml += `        marked: ${markedValue}\n`;
     }
     yaml += "\n";
   }
@@ -127,13 +145,21 @@ function renderBingoCard(person, data) {
   items.forEach((item, index) => {
     const cell = document.createElement("div");
     cell.className = "bingo-cell";
-    if (item.marked) {
+    if (item.marked === true) {
       cell.classList.add("marked");
     }
-    if (item.text === "FREE SPACE") {
+    if (item.marked === false) {
+      cell.classList.add("disqualified");
+    }
+    if (index === 12) {
       cell.classList.add("free-space");
     }
-    cell.textContent = item.text;
+
+    const textSpan = document.createElement("span");
+    textSpan.className = "bingo-cell-text";
+    textSpan.textContent = item.text;
+    cell.appendChild(textSpan);
+
     cell.dataset.index = index;
 
     cell.addEventListener("click", () => toggleCell(index, person, data));
@@ -150,7 +176,7 @@ function renderBingoCard(person, data) {
 function checkForBingo(items) {
   const grid = [];
   for (let i = 0; i < 25; i++) {
-    grid.push(items[i].marked);
+    grid.push(items[i].marked === true);
   }
 
   // Check rows
@@ -174,7 +200,7 @@ function checkForBingo(items) {
 
   // Check diagonals
   const diagonal1 = [0, 6, 12, 18, 24];
-  const diagonal2 = [4, 10, 16, 22, 20]; // Fixed: should be 20, not 20 in reverse
+  const diagonal2 = [4, 10, 16, 22, 20];
 
   if (diagonal1.every((index) => grid[index])) return true;
   if (diagonal2.every((index) => grid[index])) return true;
@@ -241,6 +267,7 @@ function toggleCell(index, person, data) {
   // Create modal overlay
   const overlay = document.createElement("div");
   overlay.className = "bingo-overlay";
+
   overlay.innerHTML = `
     <div class="bingo-modal">
       <h2>${item.text}</h2>

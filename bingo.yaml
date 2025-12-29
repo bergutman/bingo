@@ -4,159 +4,158 @@
 people:
   Dad:
     items:
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "FREE SPACE"
+      - text: "Arizona Wildcats will win the NCAA Basketball Championship"
+        marked: null
+      - text: "DJT will have a major stroke"
+        marked: null
+      - text: "Kid Rock will be honored at the Trump Kennedy Center"
+        marked: null
+      - text: "Joe Biden will die"
+        marked: null
+      - text: "Erika Kirk will run for political office"
+        marked: null
+      - text: "Blue Origin launch will go awry and kill a famous rock star and three Fortune 500 CEOs"
+        marked: null
+      - text: "Arsenal will win the Champions League"
+        marked: null
+      - text: "Sydney Sweeney will come out as bi and announce she's dating Chappell Roan"
+        marked: null
+      - text: "A humanoid robot will accidentally kill one of its programmers"
+        marked: null
+      - text: "Zohran Mamdani will be caught on a hot mic calling a popular Jewish politician a Yahūdi Wasikh or similar slur"
+        marked: null
+      - text: "Foxconn will buy Tesla"
+        marked: null
+      - text: "Spain will win the World Cup"
+        marked: null
+      - text: '"Nobody listens to me"'
         marked: true
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
+      - text: "Lara Trump will be White House Press Secretary while Karoline Leavitt is on maternity leave"
+        marked: null
+      - text: "Taylor Swift will write a love song for her wedding to Travis Kelce and it will reach #1 on the Billboard Hot 100"
+        marked: null
+      - text: "Aaron Rodgers will retire and run for Congress in California"
+        marked: null
+      - text: "A Love Island USA contestant will be removed from the show after it is revealed they were hiding the fact they were trans"
+        marked: null
+      - text: "Milan Olympic village will be evacuated and searched during the Winter Olympics following rumors of widespread reindeer antler spray doping"
+        marked: null
+      - text: "DJT will threaten to deport Pedro Pascal"
+        marked: null
+      - text: "Netflix will announce it is making a biopic about Luigi Mangione starring Jacob Elordi"
+        marked: null
+      - text: "Santos FC forward Neymar will join Messi at Inter Miami"
+        marked: null
+      - text: "Google unveils new smart glasses that simulate being in a television or movie universe; Mayberry, NC becomes most visited town followed by Bikini Bottom"
+        marked: null
+      - text: "OpenAI releases a new LLM designed to help people solve Wordle on the first move"
+        marked: null
+      - text: "Chinese scientists use CRISPR to cure a man who can't stop mansplaining to women about how to properly caulk a shower"
+        marked: null
+      - text: "Gavin Newsom will formally announce he is running for President"
+        marked: null
 
   Mom:
     items:
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "FREE SPACE"
         marked: true
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
+        marked: null
       - text: "blank"
-        marked: false
-
+        marked: null
   Ber:
     items:
-      - text: "blank"
+      - text: "Packers win the Super Bowl"
+        marked: null
+      - text: "Trump dies"
+        marked: null
+      - text: "Bill and Hillary Clinton get divorced"
+        marked: null
+      - text: "Major Thwaites Collapse"
+        marked: null
+      - text: "Someone marries a Clanker"
+        marked: null
+      - text: "Arkansas wins March Madness"
+        marked: null
+      - text: "Biden dies"
+        marked: null
+      - text: "Someone gets killed by a Clanker"
+        marked: null
+      - text: "Dad gets a new job"
+        marked: null
+      - text: "COVID vaccine ban"
+        marked: null
+      - text: "Mom gets a raise"
+        marked: null
+      - text: "No blue wave"
+        marked: null
+      - text: "California on fire"
         marked: true
-      - text: "blank"
-        marked: true
-      - text: "blank"
-        marked: true
-      - text: "blank"
-        marked: true
-      - text: "blank"
-        marked: true
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "FREE SPACE"
-        marked: true
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
-      - text: "blank"
-        marked: false
+      - text: "Someone gets pulled from Survivor 50"
+        marked: null
+      - text: "Stephanie breaks up with at least two guys"
+        marked: null
+      - text: "England wins the World Cup"
+        marked: null
+      - text: "Apple launches a folding phone"
+        marked: null
+      - text: "Lola Young wins Best New Artist"
+        marked: null
+      - text: "DRAM shortage kills a major laptop company"
+        marked: null
+      - text: "Bari Weiss gets fired"
+        marked: null
+      - text: "Luigi walks"
+        marked: null
+      - text: "A 1,000-year flood happens somewhere that already had a 1,000-year flood in 2025"
+        marked: null
+      - text: "New war, who dis?"
+        marked: null
+      - text: "RIP PBS"
+        marked: null
+      - text: "Half Life 3"
+        marked: null

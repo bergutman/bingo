@@ -141,12 +141,22 @@ select:focus {
     color: #8b4513;
     cursor: pointer;
     transition: all 0.2s;
-    word-break: break-word;
-    overflow-wrap: break-word;
     line-height: 1.1;
     min-height: 0;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+.bingo-cell-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-height: 100%;
 }
 
 @media (hover: hover) {
@@ -174,8 +184,32 @@ select:focus {
     font-weight: 900;
 }
 
+.bingo-cell.disqualified {
+    background: radial-gradient(circle, #f87171 0%, #ef4444 50%, #dc2626 100%);
+    color: white;
+    border-color: #8b4513;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bingo-cell.disqualified::before {
+    content: "✗";
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: clamp(12px, 2.5vw, 16px);
+    color: white;
+    font-weight: 900;
+}
+
 @media (hover: hover) {
     .bingo-cell.marked:hover {
+        transform: scale(1.05);
+        box-shadow:
+            inset 0 0 10px rgba(0, 0, 0, 0.3),
+            0 4px 12px rgba(139, 69, 19, 0.3);
+    }
+
+    .bingo-cell.disqualified:hover {
         transform: scale(1.05);
         box-shadow:
             inset 0 0 10px rgba(0, 0, 0, 0.3),
@@ -298,10 +332,31 @@ select:focus {
     letter-spacing: 1px;
 }
 
+.modal-btn:hover {
+    transform: scale(1.02);
+}
+
+.modal-btn.mark-btn:hover {
+    background: #22c55e;
+    color: white;
+    border-color: #16a34a;
+}
+
+.modal-btn.disqualify-btn:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #dc2626;
+}
+
+.modal-btn.reset-btn:hover {
+    background: #f59e0b;
+    color: white;
+    border-color: #d97706;
+}
+
 .close-btn:hover {
     background: #8b4513;
     color: #fff;
-    transform: scale(1.02);
 }
 
 .empty-message {
