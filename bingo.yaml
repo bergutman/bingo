@@ -110,7 +110,7 @@ people:
   Ber:
     items:
       - text: "Packers win the Super Bowl"
-        marked: null
+        marked: False
       - text: "Trump dies"
         marked: null
       - text: "Bill and Hillary Clinton get divorced"
